@@ -1,0 +1,8 @@
+<!-- <h1> Hello World, I am programmer and I will be master at Ruby On Rails </h1>
+-->
+<% @posts.each do |post| %>
+  <div class="post_wrapper">
+    <h2 class="title"> <%= link_to post.title, post %></h2>
+    <p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
+  </div>
+<% end %>
